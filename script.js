@@ -38,6 +38,12 @@ function displayGameBoard(board) {
     console.log(display);
 }
 
+function checkWinner(arr){
+    if(arr[0]==arr[1] && arr[0]==arr[2]){
+        console.log("there is a wiiner");
+    }
+}
+
 // Example usage
 const gameboard = createGameboard();
 const fran = createPlayer('Fran', 'X');
